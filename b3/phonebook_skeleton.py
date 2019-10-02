@@ -15,7 +15,7 @@ def main():
         name = " ".join(sys.argv[2:])
 
         with open(PHONEBOOK_ENTRIES, 'a') as f:
-            f.write(name + "\n")
+            f.write(name)
 
     elif sys.argv[1] == "list":
         if not os.path.isfile(PHONEBOOK_ENTRIES) or os.path.getsize(
